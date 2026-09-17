@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.poe.part1;
 
 public class Login {
@@ -55,7 +51,6 @@ public class Login {
         if (cellPhoneNumber == null) {
             return false;
         }
-        // Regex source: https://stackoverflow.com/questions/4058001/validate-south-africa-cell-phone-number
         String regex = "^\\+27\\d{1,10}$";
         return cellPhoneNumber.matches(regex);
     }
