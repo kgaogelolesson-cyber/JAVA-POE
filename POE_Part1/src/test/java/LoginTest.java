@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Unit tests that use the exact test data supplied in the assignment.
+ * They use data from the POE Provided
  */
 public class LoginTest {
 
