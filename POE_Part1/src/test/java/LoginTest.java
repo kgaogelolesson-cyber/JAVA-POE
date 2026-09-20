@@ -4,9 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * They use data from the POE Provided
- */
+//They use data from the POE Provided/
 public class LoginTest {
 
     private Login login;
@@ -14,7 +12,7 @@ public class LoginTest {
     @BeforeEach
     void setUp() {
         // A correctly registered user for login tests
-        login = new Login("John", "Doe", "kyl_1", "Ch&&sec@ke99!", "+27838968976");
+        login = new Login("Kamo", "Sebone", "kyl_1", "Ch&&sec@ke99!", "+27838968976");
     }
 
     // Username tests

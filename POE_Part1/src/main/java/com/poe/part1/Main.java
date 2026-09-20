@@ -2,7 +2,7 @@ package com.poe.part1;
 
 import java.util.Scanner;
 
-//I made this pure console application that demonstrates registration and login.
+//made this pure console application that demonstrates registration and login.
 public class Main {
 
     public static void main(String[] args) {
