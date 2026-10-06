@@ -51,6 +51,7 @@ public class Login {
         if (cellPhoneNumber == null) {
             return false;
         }
+        // Regex source: https://stackoverflow.com/questions/4058001/validate-south-africa-cell-phone-number
         String regex = "^\\+27\\d{1,10}$";
         return cellPhoneNumber.matches(regex);
     }
