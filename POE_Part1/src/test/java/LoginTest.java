@@ -4,7 +4,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-//They use data from the POE Provided/
+/**
+ * Unit tests that use the exact test data supplied in the assignment.
+ */
 public class LoginTest {
 
     private Login login;
@@ -12,10 +14,10 @@ public class LoginTest {
     @BeforeEach
     void setUp() {
         // A correctly registered user for login tests
-        login = new Login("Kamo", "Sebone", "kyl_1", "Ch&&sec@ke99!", "+27838968976");
+        login = new Login("John", "Doe", "kyl_1", "Ch&&sec@ke99!", "+27838968976");
     }
 
-    // Username tests
+    //Username tests
     @Test
     void testUsernameCorrectlyFormatted() {
         login.setUsername("kyl_1");
@@ -28,7 +30,7 @@ public class LoginTest {
         assertFalse(login.checkUserName());
     }
 
-    //  Password tests 
+    //Password tests
     @Test
     void testPasswordMeetsComplexity() {
         login.setPassword("Ch&&sec@ke99!");
@@ -41,7 +43,7 @@ public class LoginTest {
         assertFalse(login.checkPasswordComplexity());
     }
 
-    // Cell phone tests 
+    //Cell phone tests
     @Test
     void testCellPhoneCorrectlyFormatted() {
         login.setCellPhoneNumber("+27838968976");
@@ -54,7 +56,7 @@ public class LoginTest {
         assertFalse(login.checkCellPhoneNumber());
     }
 
-    // Login success / failure 
+    // Login success / failure
     @Test
     void testLoginSuccessful() {
         assertTrue(login.loginUser("kyl_1", "Ch&&sec@ke99!"));
@@ -65,7 +67,7 @@ public class LoginTest {
         assertFalse(login.loginUser("wrong", "wrong"));
     }
 
-    // Message tests (assertEquals) 
+    //Message tests (assertEquals)
     @Test
     void testRegisterUserMessages_UsernameCorrect() {
         login.setUsername("kyl_1");
